@@ -8,7 +8,7 @@ platform :ios do
       clean: true,
       export_method: 'development',
       output_directory: "~/Desktop", # Destination directory. Defaults to current directory.
-      output_name: "fastlane_jenkins.ipa",
+      output_name: "fastlane_jenkins_1.ipa",
     )
   end
 end

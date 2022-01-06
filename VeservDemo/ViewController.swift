@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("Assignment 1")
+        print("Assignment 1 log line added")
         print("Currently it's displaying on screen now!")
         assignment_1.settingUpVideoOnView(mediaURL, width: 300, height: 250, resize: .resizeAspect)
         
