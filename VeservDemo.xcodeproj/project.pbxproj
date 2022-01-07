@@ -14,7 +14,19 @@
 		4878DB7B2785CD4200018B39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4878DB792785CD4200018B39 /* LaunchScreen.storyboard */; };
 		4878DB882785D03100018B39 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4878DB872785D03100018B39 /* CustomView.xib */; };
 		4878DB8A2785D04100018B39 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878DB892785D04100018B39 /* CustomView.swift */; };
+		9AA8822227881D2800259091 /* SimpleAddition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA8822127881D2800259091 /* SimpleAddition.swift */; };
+		9AA8823727881ED800259091 /* SimpleAdditonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA8823627881ED800259091 /* SimpleAdditonTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9AA8822E27881E8800259091 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4878DB632785CD3900018B39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4878DB6A2785CD3900018B39;
+			remoteInfo = VeservDemo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4878DB6B2785CD3900018B39 /* VeservDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeservDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +38,21 @@
 		4878DB7C2785CD4200018B39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4878DB872785D03100018B39 /* CustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
 		4878DB892785D04100018B39 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		9AA8822127881D2800259091 /* SimpleAddition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAddition.swift; sourceTree = "<group>"; };
+		9AA8822A27881E8800259091 /* VeservDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeservDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AA8823527881ED700259091 /* VeservDemoTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VeservDemoTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		9AA8823627881ED800259091 /* SimpleAdditonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAdditonTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4878DB682785CD3900018B39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AA8822727881E8800259091 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				4878DB6D2785CD3900018B39 /* VeservDemo */,
+				9AA8822B27881E8800259091 /* VeservDemoTests */,
 				4878DB6C2785CD3900018B39 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				4878DB6B2785CD3900018B39 /* VeservDemo.app */,
+				9AA8822A27881E8800259091 /* VeservDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +90,7 @@
 				4878DB772785CD4200018B39 /* Assets.xcassets */,
 				4878DB792785CD4200018B39 /* LaunchScreen.storyboard */,
 				4878DB7C2785CD4200018B39 /* Info.plist */,
+				9AA8822127881D2800259091 /* SimpleAddition.swift */,
 			);
 			path = VeservDemo;
 			sourceTree = "<group>";
@@ -76,6 +102,15 @@
 				4878DB892785D04100018B39 /* CustomView.swift */,
 			);
 			path = "Custom Framework";
+			sourceTree = "<group>";
+		};
+		9AA8822B27881E8800259091 /* VeservDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				9AA8823627881ED800259091 /* SimpleAdditonTests.swift */,
+				9AA8823527881ED700259091 /* VeservDemoTests-Bridging-Header.h */,
+			);
+			path = VeservDemoTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,17 +133,40 @@
 			productReference = 4878DB6B2785CD3900018B39 /* VeservDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9AA8822927881E8800259091 /* VeservDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AA8823027881E8800259091 /* Build configuration list for PBXNativeTarget "VeservDemoTests" */;
+			buildPhases = (
+				9AA8822627881E8800259091 /* Sources */,
+				9AA8822727881E8800259091 /* Frameworks */,
+				9AA8822827881E8800259091 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AA8822F27881E8800259091 /* PBXTargetDependency */,
+			);
+			name = VeservDemoTests;
+			productName = VeservDemoTests;
+			productReference = 9AA8822A27881E8800259091 /* VeservDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		4878DB632785CD3900018B39 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
+				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					4878DB6A2785CD3900018B39 = {
 						CreatedOnToolsVersion = 12.5;
+					};
+					9AA8822927881E8800259091 = {
+						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
+						TestTargetID = 4878DB6A2785CD3900018B39;
 					};
 				};
 			};
@@ -126,6 +184,7 @@
 			projectRoot = "";
 			targets = (
 				4878DB6A2785CD3900018B39 /* VeservDemo */,
+				9AA8822927881E8800259091 /* VeservDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -142,6 +201,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9AA8822827881E8800259091 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -150,12 +216,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				4878DB8A2785D04100018B39 /* CustomView.swift in Sources */,
+				9AA8822227881D2800259091 /* SimpleAddition.swift in Sources */,
 				4878DB732785CD3A00018B39 /* ViewController.swift in Sources */,
 				4878DB6F2785CD3A00018B39 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9AA8822627881E8800259091 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AA8823727881ED800259091 /* SimpleAdditonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9AA8822F27881E8800259091 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4878DB6A2785CD3900018B39 /* VeservDemo */;
+			targetProxy = 9AA8822E27881E8800259091 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4878DB742785CD3A00018B39 /* Main.storyboard */ = {
@@ -333,6 +416,61 @@
 			};
 			name = Release;
 		};
+		9AA8823127881E8800259091 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UNJ6ZB598Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.VeservDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "VeservDemoTests/VeservDemoTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VeservDemo.app/VeservDemo";
+			};
+			name = Debug;
+		};
+		9AA8823227881E8800259091 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UNJ6ZB598Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.VeservDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "VeservDemoTests/VeservDemoTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VeservDemo.app/VeservDemo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -350,6 +488,15 @@
 			buildConfigurations = (
 				4878DB802785CD4200018B39 /* Debug */,
 				4878DB812785CD4200018B39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AA8823027881E8800259091 /* Build configuration list for PBXNativeTarget "VeservDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AA8823127881E8800259091 /* Debug */,
+				9AA8823227881E8800259091 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
